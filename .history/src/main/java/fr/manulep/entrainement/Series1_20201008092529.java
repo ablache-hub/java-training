@@ -3,12 +3,7 @@ package fr.manulep.entrainement;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
-import java.util.regex.Matcher;
-import java.util.regex.Pattern;
-import java.util.regex.*;
-import com.google.common.primitives.Chars;
 
-import org.checkerframework.checker.units.qual.A;
 import org.checkerframework.checker.units.qual.Length;
 
 public class Series1 {
@@ -153,10 +148,7 @@ public class Series1 {
 
 	public static String removeCapitals(String text) {
 		//11
-
-		String newString = text.replaceAll("[A-Z]","");
-
-		return newString;
+		return null;
 	}
 	
 	public static long addingTwoNumbers(long number1, long number2) {
@@ -180,30 +172,20 @@ public class Series1 {
 
 	public static float makeNegative(float number) {
 		//15
-		if (number >0) 
-			number = -number;
-		return number;
+		return 0;
 	}
 
 	public static boolean checkForSpecialCharacters(String string) {
 		//16
-		Pattern specialChar = Pattern.compile("[@#%]");
-		Matcher m;
-
-		m = specialChar.matcher(string);	
-		
-		if (m.find())
-			return true;
-
-		else return false;
+		return false;
 	}
 
 	public static boolean checkIfStringStartsWithConsonant( String word ) {
 		//17
-		String[] vowels = {"a","e","i","o","u","y"};
-		List<String> liste = Arrays.asList(vowels); 
-		String airletter = word.substring(0, 1).toLowerCase();
-		return !liste.contains(airletter);
+		String[] voyelles = {"a","e","i","o","u","y"};
+		List<String> liste = Arrays.asList(voyelles); 
+		String firstletter = word.substring(0, 1).toLowerCase();
+		return !liste.contains(firstletter);
 
 		
 	}
@@ -216,28 +198,9 @@ public class Series1 {
 	}
 
 	public static int[] letterPosition(String name) {
-		
 		//19
-		int[] position = new int[10];
-		String str = "HelloKitty";
-					 String nom = str.toLowerCase();
-		
-					 
-		
-		
-			for (int i=0; i<nom.length(); i++) {
-				int var = "abcdefghijklmnopqrstuvwxyz".indexOf(nom.charAt(i))+1;
-				position[i] = var;
-			}
-			return position;
-
-			}	
-
-		
-	private static void charAt(int i) {
+		return null;
 	}
-
-		
 
 	public static boolean isPeer(int number) {
 		//20

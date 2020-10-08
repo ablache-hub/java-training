@@ -153,8 +153,7 @@ public class Series1 {
 
 	public static String removeCapitals(String text) {
 		//11
-
-		String newString = text.replaceAll("[A-Z]","");
+		String newString = text.replaceAll("^A-Z","");
 
 		return newString;
 	}

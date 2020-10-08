@@ -5,10 +5,7 @@ import java.util.Arrays;
 import java.util.List;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
-import java.util.regex.*;
-import com.google.common.primitives.Chars;
-
-import org.checkerframework.checker.units.qual.A;
+import com.google.common.primitives.Chars; 
 import org.checkerframework.checker.units.qual.Length;
 
 public class Series1 {
@@ -153,10 +150,7 @@ public class Series1 {
 
 	public static String removeCapitals(String text) {
 		//11
-
-		String newString = text.replaceAll("[A-Z]","");
-
-		return newString;
+		return null;
 	}
 	
 	public static long addingTwoNumbers(long number1, long number2) {
@@ -180,8 +174,7 @@ public class Series1 {
 
 	public static float makeNegative(float number) {
 		//15
-		if (number >0) 
-			number = -number;
+		number = -number;
 		return number;
 	}
 
